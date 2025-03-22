@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure File Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Secure File Management System</h1>
+
+        <!-- Registration Form -->
+        <div class="form-container">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" id="regUsername" placeholder="Username" required>
+                <input type="password" id="regPassword" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+            <p id="registerMessage"></p>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p id="loginMessage"></p>
+        </div>
+
+        <!-- File Upload Form (Visible after login) -->
+        <div class="form-container" id="fileUploadSection" style="display: none;">
+            <h2>Upload File</h2>
+            <form id="fileUploadForm">
+                <input type="file" id="fileInput" required>
+                <button type="submit">Upload</button>
+            </form>
+            <p id="fileUploadMessage"></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
