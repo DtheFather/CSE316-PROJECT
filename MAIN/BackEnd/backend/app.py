@@ -3,6 +3,8 @@ from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 import pyotp
 import os
+# from ThreatPrevent import check_buffer_overflow, scan_for_malware
+# from Encrypt import encrypt_file, decrypt_file
 
 app = Flask(__name__, template_folder='../templates')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
@@ -57,9 +59,9 @@ def login():
         return jsonify({'message': 'Invalid credentials'}), 401
 
     # Verify OTP
-    totp = pyotp.TOTP(user.otp_secret)
-    if not totp.verify(otp):
-        return jsonify({'message': 'Invalid OTP'}), 401
+    # totp = pyotp.TOTP(user.otp_secret)
+    # if not totp.verify(otp):
+    #     return jsonify({'message': 'Invalid OTP'}), 401
 
     return jsonify({'message': 'Login successful', 'role': user.role}), 200
 UPLOAD_FOLDER = 'uploads'
