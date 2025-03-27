@@ -201,7 +201,4 @@ string decryptString(string msgstr,string keystr){
 }
 
 
-	//string enc_text = encryptString("joyeeta","01 04 02 03 01 03 04 0A 09 0B 07 0F 0F 06 03 00");
-	//cout<<decryptString(enc_text,"01 04 02 03 01 03 04 0A 09 0B 07 0F 0F 06 03 00");
-
 
