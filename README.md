@@ -13,8 +13,8 @@ hence, it's very important to take steps to decrease such chances. In order to a
 
 ### Project Directory
 ```
-Secure-File-System-Simulation
-├── final_filesystem # Main directory
+CSE316-PROJECT
+├── Secure-File-System-Simulation # Main directory
 │ ├── aes-new 
 │ |    ├── decrypt.cpp # Contains the decryption code of AES Algorithm
 │ |    ├── encrypt.cpp # Contains the encryption code of AES Algorithm
