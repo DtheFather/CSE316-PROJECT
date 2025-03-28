@@ -20,7 +20,6 @@ Secure-File-System-Simulation
 │ |    ├── encrypt.cpp # Contains the encryption code of AES Algorithm
 | |    └── structures.h # Helper function for AES Algorithm
 | ├── file.cpp # Simulates the file system
-│ └── message.aes  
 └── README.md # This document
 ```
 
